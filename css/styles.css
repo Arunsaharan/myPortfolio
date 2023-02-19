@@ -1,0 +1,132 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+.outer{
+  padding:50px 150px;
+}
+.heading{
+  padding: 0 0 2.5rem;;
+}
+
+
+/* Navbar */
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.navbar-lists li{
+  display: inline;
+  padding: 10px;
+}
+
+
+/* Hero Section */
+
+.hero-section-wrap{
+  padding:50px 150px;
+}
+.my-name{
+  font-size: 4rem;
+}
+.tag-2{
+  font-size: 3.5rem;
+}
+.hero-content{
+  margin: 30px 0;
+  width: 50%;
+}
+
+
+/* About Section */
+
+
+.about-wrap-inner{
+  padding:50px 50px 50px 100px;
+  display: flex;
+  gap:2rem;
+}
+
+.about-written p{
+  padding: 0.5rem 0;
+}
+
+.technology-list ul{
+  padding-left: 2rem;
+  display: flex;
+  gap: 4rem;
+}
+.list-container li{
+  padding: 0.4rem;
+}
+
+
+/* experience section */
+
+.experience-wrap-inner{
+  padding: 0 200px;
+}
+
+
+/* project section */
+
+.work-box{
+  display: flex;
+  gap: 10px;
+  padding: 3rem 0;
+}
+
+.project-bg-image{
+  height: 300px;
+  width: 45vw;
+  background: url('https://media.geeksforgeeks.org/wp-content/cdn-uploads/20211203233223/Top-7-Image-Processing-Project-Ideas-For-Beginners.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid black;
+}
+.project-content-wrap{
+  width: 45vw;
+}
+
+
+/* testimonials */
+
+.testimonialBox{
+  width: 300px;
+  height: 250px;
+}
+
+
+/* contact section */
+
+.contact-wrap{
+  text-align: center;
+}
+
+.contact-my-words{
+  margin: auto;
+  width: 500px;
+  padding: 3rem 0;
+}
+
+/* footer section */
+footer{
+  text-align: center;
+}
+.footer-wrap > div{
+  padding: 1rem 0;
+}
+.footer-text{
+  margin: auto;
+  width: 700px;
+}
