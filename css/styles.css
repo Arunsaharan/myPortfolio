@@ -1,132 +1,258 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-.outer{
-  padding:50px 150px;
-}
-.heading{
-  padding: 0 0 2.5rem;;
+p {
+  font-family: 'Open Sans', sans-serif;
 }
 
+.outer {
+  padding: 50px 150px;
+}
+
+.heading {
+  display: flex;
+  position: relative;
+  padding: 0 0 2.5rem;
+  font-size: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.heading::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 25px;
+  width: 300px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: #233554;
+}
+
+.btn {
+  width: fit-content;
+  height: fit-content;
+  padding: 1rem 1.5rem;
+  border: 2px solid blue;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: 'Roboto Mono', monospace;
+}
+/* page loader */
+ #pageLoader{
+  height: 100vh;
+  width: 100vw;
+  background-image: url('https://gifimage.net/wp-content/uploads/2018/11/circle-loader-gif-2.gif');
+  background-color: #000 ;
+  background-size: 25%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  z-index: 25;
+}
 
 /* Navbar */
-nav{
+nav {
   display: flex;
   justify-content: space-between;
   padding: 20px;
   font-family: 'Roboto Mono', monospace;
 }
 
-.navbar-lists li{
+.top-navbar{
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+.navbar-lists li {
   display: inline;
   padding: 10px;
 }
 
-
 /* Hero Section */
-
-.hero-section-wrap{
-  padding:50px 150px;
+.hero-section-wrap {
+  padding: 50px 150px;
 }
-.my-name{
+
+.my-name {
   font-size: 4rem;
 }
-.tag-2{
+
+.tag-1 {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.8rem;
+}
+
+.heading-lg {
+  font-family: 'Open Sans', sans-serif;
+  font-size: clamp(30px, 8vw, 60px);
+}
+
+.tag-2 {
+  font-family: 'Open Sans', sans-serif;
   font-size: 3.5rem;
 }
-.hero-content{
+
+.hero-content {
+  font-family: 'Open Sans', sans-serif;
   margin: 30px 0;
   width: 50%;
 }
 
-
 /* About Section */
-
-
-.about-wrap-inner{
-  padding:50px 50px 50px 100px;
+.about-wrap-inner {
+  padding: 50px 50px 50px 75px;
   display: flex;
-  gap:2rem;
+  gap: 4rem;
 }
 
-.about-written p{
+.about-written p {
   padding: 0.5rem 0;
+  width: 500px;
 }
 
-.technology-list ul{
+.technology-list ul {
   padding-left: 2rem;
   display: flex;
   gap: 4rem;
 }
-.list-container li{
+
+.list-container li {
   padding: 0.4rem;
 }
 
-
-/* experience section */
-
-.experience-wrap-inner{
-  padding: 0 200px;
+.list-container li::before {
+  content: url(images/check-circle.svg);
 }
 
+.about-img {
+  position: relative;
+  top: 75px;
+}
+
+/* experience section */
+.experience-wrap-inner {
+  padding: 0 150px;
+}
+
+.designation-company-info>h3 {
+  font-size: 25px;
+}
+
+.experience-content {
+  padding: 10px 50px;
+}
+
+.responsibilities {
+  padding-left: 50px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5rem;
+}
+
+.responsibilities li {
+  padding-top: 1rem;
+}
 
 /* project section */
-
-.work-box{
+.work-box {
   display: flex;
-  gap: 10px;
   padding: 3rem 0;
 }
 
-.project-bg-image{
-  height: 300px;
-  width: 45vw;
+.project-bg-image1 {
+  float: left;
+  height: 350px;
+  width: 700px;
   background: url('https://media.geeksforgeeks.org/wp-content/cdn-uploads/20211203233223/Top-7-Image-Processing-Project-Ideas-For-Beginners.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border: 1px solid black;
-}
-.project-content-wrap{
-  width: 45vw;
+  border-radius: 3.5px;
 }
 
+.project-bg-image2 {
+  position: relative;
+  left: 400px;
+  z-index: -1;
+  height: 350px;
+  width: 700px;
+  background: url('https://media.geeksforgeeks.org/wp-content/cdn-uploads/20211203233223/Top-7-Image-Processing-Project-Ideas-For-Beginners.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid black;
+  border-radius: 3.5px;
+}
+
+.project-content-wrap1 {
+  position: absolute;
+  right: 100px;
+  float: right;
+  width: 500px;
+}
+
+.project-content-wrap2 {
+  position: absolute;
+  left: 100px;
+  width: 550px;
+}
+
+.project-content {
+  text-align: right;
+}
+
+.project-heading h3 {
+  color: grey;
+  margin: 1rem 0;
+}
+
+.project-description p {
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+  border: 1px solid black;
+  border-radius: 3.5px;
+}
 
 /* testimonials */
-
-.testimonialBox{
+.testimonialBox {
   width: 300px;
   height: 250px;
 }
 
-
 /* contact section */
-
-.contact-wrap{
+.contact-wrap {
   text-align: center;
 }
 
-.contact-my-words{
+.contact-heading {
+  font-size: 2rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contact-my-words {
   margin: auto;
   width: 500px;
-  padding: 3rem 0;
+  padding: 1.5rem 0;
 }
 
 /* footer section */
-footer{
+footer {
   text-align: center;
 }
-.footer-wrap > div{
+
+.footer-wrap>div {
   padding: 1rem 0;
 }
-.footer-text{
+
+.footer-text {
   margin: auto;
   width: 700px;
 }
