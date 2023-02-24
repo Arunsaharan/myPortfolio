@@ -39,17 +39,24 @@ p {
   width: fit-content;
   height: fit-content;
   padding: 1rem 1.5rem;
-  border: 2px solid blue;
+  border: 2px solid #6927ff;
   border-radius: 5px;
   font-size: 14px;
   font-family: 'Roboto Mono', monospace;
 }
+
+.btn:hover {
+  background-color: #6927ff;
+  color: #fff;
+  transition: 500ms;
+}
+
 /* page loader */
- #pageLoader{
+#pageLoader {
   height: 100vh;
   width: 100vw;
   background-image: url('https://gifimage.net/wp-content/uploads/2018/11/circle-loader-gif-2.gif');
-  background-color: #000 ;
+  background-color: #000;
   background-size: 25%;
   background-position: center;
   background-repeat: no-repeat;
@@ -65,12 +72,13 @@ nav {
   font-family: 'Roboto Mono', monospace;
 }
 
-.top-navbar{
+.top-navbar {
   position: sticky;
   top: 0;
   backdrop-filter: blur(10px);
   z-index: 10;
 }
+
 .navbar-lists li {
   display: inline;
   padding: 10px;
@@ -88,6 +96,7 @@ nav {
 .tag-1 {
   font-family: 'Roboto Mono', monospace;
   font-size: 0.8rem;
+  color: #6927ff;
 }
 
 .heading-lg {
@@ -106,6 +115,20 @@ nav {
   width: 50%;
 }
 
+.hero-content p {
+  color: #666666;
+}
+
+.resume {
+  background-color: #6927ff;
+  color: #fff;
+}
+
+.resume:hover {
+  background-color: #fff;
+  color: #6927ff;
+}
+
 /* About Section */
 .about-wrap-inner {
   padding: 50px 50px 50px 75px;
@@ -114,6 +137,7 @@ nav {
 }
 
 .about-written p {
+  color: #666666;
   padding: 0.5rem 0;
   width: 500px;
 }
@@ -125,11 +149,20 @@ nav {
 }
 
 .list-container li {
+  color: #666666;
   padding: 0.4rem;
+  list-style: none;
+}
+
+.about-heading p {
+  color: #191937;
 }
 
 .list-container li::before {
-  content: url(images/check-circle.svg);
+  content: url(../images/check-circle.svg);
+  padding-right: 10px;
+  position: relative;
+  top: 2px;
 }
 
 .about-img {
@@ -158,8 +191,16 @@ nav {
 
 .responsibilities li {
   padding-top: 1rem;
+  list-style: circle outside url('../images/arrow-right.svg');
+  color: #666666;
 }
 
+/* .arrow::before {
+  content: url('../images/arrow-right.svg');
+  padding-right: 10px;
+  position: relative;
+  top: 4px;
+} */
 /* project section */
 .work-box {
   display: flex;
@@ -170,7 +211,7 @@ nav {
   float: left;
   height: 350px;
   width: 700px;
-  background: url('https://media.geeksforgeeks.org/wp-content/cdn-uploads/20211203233223/Top-7-Image-Processing-Project-Ideas-For-Beginners.png');
+  background: url('../images/calculator.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -184,7 +225,7 @@ nav {
   z-index: -1;
   height: 350px;
   width: 700px;
-  background: url('https://media.geeksforgeeks.org/wp-content/cdn-uploads/20211203233223/Top-7-Image-Processing-Project-Ideas-For-Beginners.png');
+  background: url('../images/calculator.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -210,23 +251,114 @@ nav {
 }
 
 .project-heading h3 {
-  color: grey;
   margin: 1rem 0;
+}
+
+.project-heading {
+  color: #6927ff;
+  font-weight: bolder;
+}
+
+.project-heading a {
+  color: #8892b0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.project-heading a:hover {
+  color: #6927ff;
+  font-family:
+}
+
+.project-description {
+  border-radius: 3.5px;
+  background-color: #6927ff;
+  box-shadow: 0 4px 16px 5px rgb(0 0 0 / 20%), 0 6px 20px 5px rgb(0 0 0 / 19%);
 }
 
 .project-description p {
   padding: 1rem 1.5rem;
   margin-bottom: 2rem;
-  border: 1px solid black;
-  border-radius: 3.5px;
+  color: #fff;
 }
 
 /* testimonials */
-.testimonialBox {
-  width: 300px;
-  height: 250px;
+.swiper {
+  width: 100%;
+  height: 100%;
 }
 
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-wraper{
+  height: 600px;
+}
+/* .swiper-slide{
+  margin: 0 1rem;
+} */
+.swiper-slide img {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+  top: 50px;
+  z-index: 2;
+}
+
+.testimonial-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap:0.5rem; */
+}
+
+.testimonialTxt-wrap{
+  color: #666666;
+  width: 500px;
+  border-radius: 3.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:1rem;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+.testimonialTxt-wrap:hover{
+  background-color: #6927ff;
+  color: #fff;
+  transition: 700ms;
+}
+
+.testimonialTxt {
+  width: 400px;
+  height: 200px;
+
+}
+
+.testimonialTxt::before{
+  content: '❝ ';
+  font-size: 3rem;
+  position: relative;
+  right: 14rem;
+  top:2rem;
+}
+.testimonialTxt::after{
+  content: ' ❞';
+  font-size: 3rem;
+  position: relative;
+  left: 12rem;
+  bottom: 0.5rem;
+}
 /* contact section */
 .contact-wrap {
   text-align: center;
@@ -238,6 +370,7 @@ nav {
 }
 
 .contact-my-words {
+  color: #666666;
   margin: auto;
   width: 500px;
   padding: 1.5rem 0;
@@ -253,6 +386,7 @@ footer {
 }
 
 .footer-text {
+  color: #666666;
   margin: auto;
   width: 700px;
 }
