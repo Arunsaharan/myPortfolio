@@ -6,12 +6,21 @@ window.addEventListener('load', () => loader.style.display = 'none');
 
 // sticky navbar on scroll
 
-const target = document.getElementById('organisation');
+const target1 = document.getElementById('organisation');
+const target2 = document.getElementById('resumeBox');
 
 const addClassSticky = function() {
   let navBar = document.getElementsByClassName('top-navbar');
   for (var i = 0; i < navBar.length; i++) {
-    navBar[i].className += ' stickyNav';
+    navBar[i].classList.add('stickyNav') ;
+  }
+    // observer1.unobserve(target1);
+}
+
+const removeClassSticky = function(){
+  let navBar = document.getElementsByClassName('top-navbar');
+  for (var i = 0; i < navBar.length; i++) {
+    navBar[i].classList.remove('stickyNav');
   }
 }
 
@@ -19,14 +28,23 @@ const addStickyOnIntersection = (entries) => {
   if (entries[0].isIntersecting) {
     addClassSticky();
   }
-  observer.unObserve(target);
 }
 
-const observer = new IntersectionObserver(addStickyOnIntersection, {
-  threshold: 1
+const removeStickyOnIntersection = (entries) => {
+  if (entries[0].isIntersecting) {
+    removeClassSticky();
+  }
+}
+
+const observer1 = new IntersectionObserver(addStickyOnIntersection, {
+  threshold: 0
+});
+const observer2 = new IntersectionObserver(removeStickyOnIntersection, {
+  threshold: 0
 });
 
-observer.observe(target);
+observer2.observe(target2);
+observer1.observe(target1);
 
 
 
@@ -76,7 +94,7 @@ if (typed) {
 // swiper js
 
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 2,
+  slidesPerView: 'auto',
   spaceBetween: 10,
   autoplay: {
     delay: 2500,
