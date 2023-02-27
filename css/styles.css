@@ -214,6 +214,7 @@ nav {
   box-shadow: 0 4px 16px 5px rgb(255 0 50 / 20%), 0 6px 20px 5px rgb(255 0 50 / 19%);
   transition: all 500ms;
   position: relative;
+  transition: all 200ms;
 }
 .about-img::after{
   content: '';
@@ -229,6 +230,8 @@ nav {
 }
 .about-img:hover{
   background: transparent;
+  transform: scale(1.05);
+
 }
 .about-img:hover::after{
   top: 10px;
