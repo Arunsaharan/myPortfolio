@@ -14,7 +14,8 @@ a {
 
 p {
   font-family: 'Open Sans', sans-serif;
-  line-height: 2rem;
+  line-height: 1.8rem;
+  font-size: 16px;
 }
 
 #hero, #experience, #contact {
@@ -48,6 +49,7 @@ p {
 .btn {
   width: fit-content;
   height: fit-content;
+  margin-right: 15px;
   padding: 1rem 1.5rem;
   border: 2px solid #6927ff;
   border-radius: 7.5px;
@@ -65,7 +67,7 @@ p {
 #pageLoader {
   height: 100vh;
   width: 100vw;
-  background-image: url('https://gifimage.net/wp-content/uploads/2018/11/circle-loader-gif-2.gif');
+  background-image: url('../images/loading.gif');
   background-color: #000;
   background-size: 25%;
   background-position: center;
@@ -94,13 +96,16 @@ nav {
   top: 0;
 }
 
-.navbar-lists li {
+.navbar-lists li,.navbar-logo a{
   color: #6927ff;
   display: inline;
   padding: 10px;
 }
+.navbar-lists a:active ,.navbar-lists a:visited{
+  color: #080808;
+}
 
-.navbar-lists li:hover {
+.navbar-lists li:hover,.navbar-logo a:hover{
   color: #FF0032;
 }
 
@@ -208,8 +213,8 @@ nav {
 }
 
 .about-img {
-  background: linear-gradient(rgba(255, 0, 50, 0.3), rgba(255, 0, 50, 0.3));
-  box-shadow: 0 4px 16px 5px rgb(255 0 50 / 20%), 0 6px 20px 5px rgb(255 0 50 / 19%);
+  background: linear-gradient(rgba(	105, 39, 255, 0.4), rgba(	105, 39, 255, 0.4));
+  box-shadow: 0 4px 16px 5px rgb(105 39 255 / 20%), 0 6px 20px 5px rgb(105 39 255 / 19%);
   transition: all 500ms;
   position: relative;
   transition: all 200ms;
@@ -229,7 +234,7 @@ nav {
 }
 
 .about-img:hover {
-  background: transparent;
+  background: linear-gradient(rgba(	105, 39, 255, 0.1), rgba(	105, 39, 255, 0.1));
   transform: scale(1.05);
 }
 
@@ -285,7 +290,7 @@ nav {
 .project-bg-image1 {
   height: 400px;
   width: 60%;
-  background-image: linear-gradient(rgba(35, 24, 52, 0.3), rgba(35, 24, 52, 0.3)), url(../images/calculator.jpg);
+  background-image:  url(../images/project1.png);
   background-size: cover;
   background-position: center;
   border-radius: 7.5px;
@@ -305,7 +310,7 @@ nav {
 .project-bg-image2 {
   height: 400px;
   width: 60%;
-  background-image: linear-gradient(rgba(35, 24, 52, 0.3), rgba(35, 24, 52, 0.3)), url(../images/calculator.jpg);
+  background-image: linear-gradient(rgba(35, 24, 52, 0.3), rgba(35, 24, 52, 0.3)), url(../images/project2.png);
   background-size: cover;
   background-position: center;
   border-radius: 7.5px;
@@ -488,6 +493,11 @@ footer {
   .project-description1, .project-description2 {
     width: 480px;
   }
+
+  /* .about-img>img, .about-img-wrap, .about-img {
+    height: 300px;
+    width: 260px;
+  } */
 }
 
 @media (max-width: 950px) {

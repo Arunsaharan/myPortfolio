@@ -12,6 +12,10 @@
 
   <!-- swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  
+  <!-- tilt js -->
+  <script src="https://cdn.jsdelivr.net/npm/tilt.js@1.2.1/dist/tilt.min.js"></script>
+
 
   <!-- Font link -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -110,8 +114,10 @@
           </div>
         </div>
         <div class="about-img-wrap">
-          <div class="about-img">
-            <img src="images/my-pic.JPG" alt="about-img">
+          <div id="my-element" class="about-img" data-tilt>
+            
+           </span><img src="images/my-pic.png" alt="about-img">
+          
           </div>
         </div>
       </div>
@@ -164,10 +170,10 @@
           <div class="project-content">
             <div class="project-heading">
               <p>First Project</p>
-              <h3><a href="#">My Simple Calculator</a></h3>
+              <h3><a href="#">A Weather App</a></h3>
             </div>
             <div class="project-description1">
-              <p>A simple calculator whuich can perform simple arithematic calculations.This calculator has helped me to understand basics of javascript language. It has also helped me to understand the grid system of CSS.</p>
+              <p>Stay up-to-date with the latest weather conditions in any city with this API-based weather app. Powered by OpenWeatherMap API, our app provides real-time information on temperature, humidity, wind speed, etc.  </p>
             </div>
             <a href="#" style="float: right;">
               <div class="btn btn-up">
@@ -189,10 +195,10 @@
           <div class="project-content">
             <div class="project-heading">
               <p>Second Project</p>
-              <h3><a href="#">My Simple Calculator</a></h3>
+              <h3><a href="#">A Simple Calculator</a></h3>
             </div>
             <div class="project-description2">
-              <p>A simple calculator whuich can perform simple arithematic calculations.This calculator has helped me to understand basics of javascript language. It has also helped me to understand the grid system of CSS.</p>
+              <p>"Get quick and accurate answers to your mathematical equations with our simple calculator. Our calculator has a user-friendly interface that allows you to perform basic arithmetic operations such as addition, subtraction, multiplication, and division.</p>
             </div>
             <a href="#" style="float: right;">
               <div class="btn btn-up">
@@ -213,10 +219,10 @@
           <div class="project-content lazycontent">
             <div class="project-heading">
               <p>Third Project</p>
-              <h3><a href="#">My Simple Calculator</a></h3>
+              <h3><a href="#">A Custom Theme</a></h3>
             </div>
             <div class="project-description1">
-              <p>A simple calculator whuich can perform simple arithematic calculations.This calculator has helped me to understand basics of javascript language. It has also helped me to understand the grid system of CSS.</p>
+              <p>Experience a personalized and visually appealing browsing experience with my custom theme, designed with HTML, CSS, and JavaScript. My theme offers a unique and creative design that will transform the look and feel of your website.</p>
             </div>
             <a href="#" style="float: right;">
               <div class="btn btn-up">
@@ -250,7 +256,7 @@
           <div class="swiper-slide">
             <div class="testimonial-box">
               <div>
-                <img class="test-Img" src="images/testImg.jpg" alt="testimg" width="70">
+                <img class="test-Img" src="images/testimg.jpg" alt="testimg" width="70" >
               </div>
 
               <div class="testimonialTxt-wrap">
@@ -407,6 +413,8 @@
   <!-- JavaScript -->
   <script src="index.js" charset="utf-8"></script>
 
+  <!-- tilt js -->
+  
 </body>
 
 </html>
