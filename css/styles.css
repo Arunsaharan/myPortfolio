@@ -18,6 +18,7 @@ p {
   font-size: 16px;
 }
 
+
 #hero, #experience, #contact {
   background-color: rgba(147, 107, 232, 0.05);
 }
@@ -246,6 +247,7 @@ nav {
 .about-img>img {
   position: absolute;
   z-index: -1;
+  background-color: antiquewhite;
 }
 
 /* experience section */
@@ -282,17 +284,24 @@ nav {
   height: 400px;
   margin: 4rem 0;
 }
+.image1{
+  background-image: linear-gradient(rgba(35, 24, 52, 0.3), rgba(35, 24, 52, 0.3)),  url(../images/project1.png);
+}
+.image3{
+  background-image: linear-gradient(rgba(35, 24, 52, 0.3), rgba(35, 24, 52, 0.3)), url(../images/project3.png);
+}
 
-.project-bg-image1, .project-content-wrap1 {
+
+.project-bg-image, .project-content-wrap1 {
   float: left;
 }
 
-.project-bg-image1 {
-  height: 400px;
+.project-bg-image {
+  height: 350px;
   width: 60%;
-  background-image:  url(../images/project1.png);
-  background-size: cover;
   background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   border-radius: 7.5px;
   box-shadow: 0 4px 16px 5px rgb(0 0 0 / 20%), 0 6px 20px 5px rgb(0 0 0 / 19%);
 }
@@ -308,11 +317,12 @@ nav {
 }
 
 .project-bg-image2 {
-  height: 400px;
+  height: 350px;
   width: 60%;
   background-image: linear-gradient(rgba(35, 24, 52, 0.3), rgba(35, 24, 52, 0.3)), url(../images/project2.png);
-  background-size: cover;
   background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   border-radius: 7.5px;
   box-shadow: 0 4px 16px 5px rgb(0 0 0 / 20%), 0 6px 20px 5px rgb(0 0 0 / 19%);
 }
@@ -584,7 +594,7 @@ footer {
     color: #fff;
   }
 
-  .project-bg-image1, .project-bg-image2 {
+  .project-bg-image, .project-bg-image2 {
     width: 80%;
     margin: 10%;
   }
@@ -728,7 +738,7 @@ footer {
     height: 480px;
   }
 
-  .project-bg-image1, .project-bg-image2 {
+  .project-bg-image, .project-bg-image2 {
     height: 500px;
   }
 
