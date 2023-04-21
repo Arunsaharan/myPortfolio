@@ -1,3 +1,3 @@
 # myPortfolio
-a simple portfolio website
+My portfolio website is a showcase of my skills, projects, and professional experience. Through this website, I aim to demonstrate my creativity and technical abilities in a visually appealing and organized way. The website features a clean and modern design, with easy navigation and clear descriptions of my work. Visitors can browse through my portfolio and learn more about my background, skills, and interests. Whether you are a potential employer or a fellow developer, my portfolio website provides a comprehensive overview of my work and serves as a platform for networking and collaboration.
 To visit the website you may log on to https://arunsaharan.github.io/myPortfolio/
