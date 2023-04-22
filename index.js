@@ -51,6 +51,19 @@ const observer2 = new IntersectionObserver(removeStickyOnIntersection, {
 observer2.observe(target2);
 observer1.observe(target1);
 
+// bhamburger-navbar
+let hamburger = document.getElementById("hamburger-icon");
+let hamburgerMenu = document.getElementById("hamburger-navbar-wrap");
+
+let hamburgerVisible = false;
+
+hamburger.addEventListener("click", () => {
+  hamburgerVisible = !hamburgerVisible;
+  hamburgerVisible
+    ? (hamburgerMenu.style.display = "block")
+    : (hamburgerMenu.style.display = "none");
+});
+
 // lazy loading website content
 
 function reveal() {
