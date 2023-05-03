@@ -1,4 +1,3 @@
-// alert('working')
 // page loader animation
 
 let loader = document.getElementById("pageLoader");
@@ -51,7 +50,8 @@ const observer2 = new IntersectionObserver(removeStickyOnIntersection, {
 observer2.observe(target2);
 observer1.observe(target1);
 
-// bhamburger-navbar
+// hamburger-navbar
+
 let hamburger = document.getElementById("hamburger-icon");
 let hamburgerMenu = document.getElementById("hamburger-navbar-wrap");
 
@@ -113,12 +113,3 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
-
-// // tilt js
-
-// VanillaTilt.init(document.querySelector("#my-element"), {
-//   max: 25,
-//   speed: 400,
-//   glare: true,
-//   "max-glare": 0.5,
-// });
