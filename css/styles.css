@@ -20,7 +20,7 @@ p {
 
 
 #hero, #experience, #contact {
-  background-color: rgba(147, 107, 232, 0.05);
+  background-color: #936be80d;
 }
 
 .outer {
@@ -185,7 +185,7 @@ nav {
 }
 
 .hero-content a {
-  color: #ff0032;
+  color: #ff0000;
 }
 
 .resume {
@@ -211,7 +211,7 @@ nav {
   width: 31.25rem;
 }
 
-.technology-list ul {
+.technology-list> div {
   padding-left: 2rem;
   display: flex;
   gap: 4rem;
@@ -329,7 +329,13 @@ nav {
   float: left;
 }
 
-.project-bg-image {
+.project-bg-image, .project-bg-image2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-bg-image,.project-bg-image2 {
+  position: relative;
   height: 350px;
   width: 60%;
   background-position: center;
@@ -338,6 +344,7 @@ nav {
   border-radius: 7.5px;
   box-shadow: 0 4px 16px 5px rgb(0 0 0 / 20%), 0 6px 20px 5px rgb(0 0 0 / 19%);
 }
+
 
 .project-content-wrap1 {
   text-align: right;
@@ -350,15 +357,9 @@ nav {
 }
 
 .project-bg-image2 {
-  height: 350px;
-  width: 60%;
   background-image: linear-gradient(rgba(35, 24, 52, 0.3), rgba(35, 24, 52, 0.3)), url(../images/project2.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  border-radius: 7.5px;
-  box-shadow: 0 4px 16px 5px rgb(0 0 0 / 20%), 0 6px 20px 5px rgb(0 0 0 / 19%);
 }
+
 .project-box:hover .project-bg-image2{
   background-image: url(../images/project2.png);
 }
@@ -575,6 +576,10 @@ footer {
 }
 
 @media (max-width: 850px) {
+
+  #pageLoader{
+    background-size: 40%;
+  }
   .about-wrap-inner {
     flex-direction: column;
   }
@@ -677,6 +682,9 @@ footer {
 }
 
 @media (max-width:550px) {
+  #pageLoader{
+    background-size: 55%;
+  }
  
   .testimonialTxt-wrap {
     width: 22.5rem;

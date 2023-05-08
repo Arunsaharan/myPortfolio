@@ -2,7 +2,7 @@
 
 let loader = document.getElementById("pageLoader");
 let myPageLoader = () => (loader.style.display = "none");
-window.addEventListener("load", () => setTimeout(myPageLoader, 2500));
+window.addEventListener("load", () => setTimeout(myPageLoader, 2000));
 
 // active links
 
